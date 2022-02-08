@@ -1,0 +1,1219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    color: #fff;
+    font-size: 1.5rem;
+    border-right: 1px solid #fff;
+    padding-right: 2rem;
+}
+
+.underline{
+    width: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.border{
+    color: rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
+    position: relative;
+    font-size: 2rem;
+}
+
+.border::after{
+    content: "";
+    display:block;
+    width: 200px;
+    height: 0.5px;
+    right:49.5rem;
+    top: 1rem;
+    position: absolute;
+    background:rgba(0, 0, 0, 0.2);
+}
+
+.border:before{
+    content: "";
+    width:200px;
+    height: 0.5px;
+    left: 49.5rem;
+    top: 1rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* ------Header Section CSS--------- */
+
+.header{
+    width: 100%;
+    background-color: #2e3131;
+    color: #fff;
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box .info{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.box .info .email{
+    margin-left:7%;
+    padding: 1% 0;
+}
+
+.box .info .flow{
+    margin-left: 7%;
+    font-size: 1rem;
+    background-color: #f15025;
+    padding: 1%;
+}
+
+.box .admin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    padding: 1% 0;
+}
+
+.box .admin .sign{
+    margin-right: 4%;
+    padding: 1%;
+}
+
+.box .admin .noborder{
+    border: none;
+    margin-left: 5%;
+}
+
+/* -----CSS for NavBar */
+
+.navbar{
+    background-color: #fff;
+    width: 100%;
+}
+
+.nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.nav .logo{
+    width: 20%;
+    padding: 2% 0;
+}
+
+.nav .logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav .menu{
+    width: 80%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+.menubar{
+    font-size: 3rem;
+    padding: 1%;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: none;
+}
+
+.menubar:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav .menu .list{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav .menu .list ul{
+    width: 100%;
+    padding: 2% 0;
+}
+
+.nav .menu .list ul li{
+    display: inline;
+    font-size: 1.5rem;
+    padding: 0 3%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav .menu .list ul li:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav .menu .list .search{
+    padding: 2%;
+    border: 1px solid gray;
+    margin-right: 6%;
+    font-size: 2rem;
+    color: gray;
+}
+
+.nav .menu .list .search:hover{
+    color:#fff;
+    background-color: black;
+}
+
+/* ------------------------Banner Section-------------- */
+
+.banner .image{
+    width: 100%;
+    background-color: #67809f;
+    position: relative;
+    z-index: -10;
+
+
+}
+
+.banner .image img{
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: -1;
+
+}
+
+.banner .text-overlay{
+    position:absolute;
+    top: 55%;
+    left: 30%;
+    text-align: center;
+    
+}
+
+.banner .text-overlay h1{
+    color: #fff;
+    font-size: 5rem;
+    padding: 1% 0;
+}
+
+.banner .text-overlay h2{
+    color: #fff;
+    font-size: 4rem;
+    padding: 1% 0;
+}
+
+.banner .text-overlay .btn{
+    font-size: 1.5rem;
+    padding: 2% 4%;
+    background-color: rgb(247, 173, 63);
+    color: #fff;
+    font-weight: bolder;
+    border:none;
+    border-bottom: 3px solid chocolate;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.banner .text-overlay .btn:hover{
+    color: rgb(247, 173, 63);
+    background-color: #fff;
+}
+
+/* ------------CSS for Featured Sections----------- */
+
+.featured{
+    background-color: #67809f;
+    height: 75vh;
+}
+
+.featured .box2{
+    width: 90%;
+    position: absolute;
+    left:5%;
+    bottom: -78%;
+    background-color: #fff;
+    display: flex;
+    
+}
+
+.featured .box2 .category{
+    width: 60%;
+    padding: 3%;
+}
+
+.featured .box2 .category h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.featured .box2 .category p{
+    font-size: 1.5rem;
+    padding: 1% 0;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.featured .box2 .category .program{
+    padding: 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured .box2 .category .program .box3{
+    flex: 1 1 25rem;
+    gap: 3rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 1%;
+}
+
+.featured .box2 .category .program .box3 .icon{
+    font-size: 4rem;
+    color: rgb(100, 100, 247);
+    padding-right: 10%;
+}
+
+.featured .box2 .category .program .box3 .title h2{
+    font-size:2rem;
+    padding-bottom: 2%;
+}
+
+.featured .box2 .category .program .box3 .title p{
+    text-align: left;
+    padding: 5% 0;
+    font-size: 1.5rem;
+}
+
+.featured .box2 .find{
+    flex: 1 1 20rem;
+    background-color: #f1c40f;
+    text-align: center;
+    height: 90%;
+}
+
+.featured .box2 .find .head{
+    padding: 5% 10%;    
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid rgb(77, 61, 61);
+    background-color:#e74c3c ;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.featured .box2 .find .head i{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.featured .box2 .find .head h2{
+    color: #fff;
+    padding: 0 4%;
+    font-weight: bold;
+}
+
+.featured .box2 .find .form{
+    padding: 10% 0;
+}
+.featured .box2 .find .form input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    margin-top: 2%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.featured .box2 .find .form .btn{
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    padding: 2% 4%;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bolder;
+    border:none;
+    border-bottom: 3px solid #2980b9;
+    cursor: pointer;
+}
+
+.featured .box2 .find .form .btn:hover{
+    background-color: #fff;
+    color: #3498db;
+}
+
+/* ----------CSS for Courses Section---------- */
+
+.courses{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.header1 h1{
+    font-size: 4rem;
+    padding: 2% 0;
+}
+
+.header1 span{
+    font-weight: lighter;
+    color: #333;
+}
+
+.header1 p{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.courses .box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 90%;
+    margin: auto;
+}
+
+.courses .box4 .content{
+    flex: 1 1 50rem;
+    background-color: rgba(196, 187, 187, 0.3);
+    display: flex;
+}
+
+.courses .box4 .content .details{
+    padding: 5% 0;
+    border-top: 3px solid red;
+    flex: 1 1 70rem;
+    width: 90%;
+    
+}
+
+.courses .box4 .content .details .name{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 5%;
+    
+}
+
+.courses .box4 .content .details .name h3{
+    display: inline;
+    border-right: 1px solid black;
+    padding-right: 3%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.courses .box4 .content .details .name span{
+    color:#18dcff ;
+}
+
+.courses .box4 .content .details .name .date{
+    color: #ff4d4d;
+    padding-left: 2%;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.courses .box4 .content .details h1{
+    font-size: 2rem;
+    width: 60%;
+    text-align: left;
+    padding: 5%;
+}
+
+.courses .box4 .content .details p{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 5%;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.courses .box4 .content .img-container{
+    width: 60%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.courses .box4 .content .img-container img{
+    width: 100%;
+    height: 90%;
+    object-fit: fill;
+}
+
+.courses .box4 .content .img-container .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    top:0;
+    color: white;
+    left:-250px;
+    opacity: 0.8;
+    width: 100%;
+    height: 90%;
+    transition: all 0.2s linear;
+}
+
+.courses .box4 .content .img-container:hover .overlay{
+    left: 0;
+}
+
+
+.courses .box4 .content .img-container .overlay .icons{
+    color: #fff;
+    padding: 4%;
+}
+
+.courses .box4 .content .img-container .overlay i{
+    padding-right: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.courses .box4 .content .img-container .overlay .btn{
+    font-size: 1.5rem;
+    padding: 4%;
+    background-color: #fc5c65;
+    color: #fff;
+    border:none;
+    border-bottom: 3px solid #eb3b5a;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.courses .box4 .content .img-container .overlay .btn:hover{
+    background-color: #fff;
+    color: rgb(237, 145, 8);
+}
+
+/* -------CSS For Banner 2-------------- */
+
+.banner2{
+    background-color: #67809f;
+    padding: 7% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner2 .banner2-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin: auto;
+}
+
+.banner2 .content2{
+    display: flex;
+    align-items: baseline;
+    gap: 4%;
+    flex: 1 1 25%;
+}
+
+.banner2 .content2 .icons{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banner2 .content2 i{
+    font-size: 5rem;
+    color: #f1c40f;
+    padding: 1%;
+}
+
+.banner2 .content2 .icons h3{
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.banner2 .content2 p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1% 0;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    padding-top: 2rem;
+}
+
+.banner2 .content2 .underline{
+    border-color: #fff;
+}
+
+
+/* ----------CSS for Education section---------- */
+
+.eduction{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.eduction .box6{
+    display: flex;
+    padding: 5% 0;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 3%;
+}
+
+.eduction .box6 .box-container{
+    flex: 1 1 25rem;
+    text-align: left;
+}
+
+.eduction .box6 .box-container .image-content{
+    width: 100%;
+
+}
+
+.eduction .box6 .box-container .image-content img{
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 4px solid #3498db;
+
+}
+
+.eduction .box6 .details2{
+    padding: 7% ;
+    background-color: rgba(196, 187, 187, 0.3);
+}
+
+.eduction .box6 .details2 .name{
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    font-size: 1.5rem;
+    padding: 3% 0;
+}
+
+.eduction .box6 .details2 .name h3{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.eduction .box6 .details2 .name span{
+    color: #18dcff;
+}
+
+.eduction .box6 .details2 .name .date{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.eduction .box6 .details2 .name .date i{
+    color: #8e44ad;
+    margin-right: 1rem;
+}
+
+.eduction .box6 .details2 h1{
+    font-size: 1.5rem;
+    padding: 8% 0;
+}
+
+.eduction .box6 .details2 p{
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding: 2% 0;
+}
+
+.eduction .box6 .details2 .btn{
+    font-size: 1.5rem;
+    padding: 4%;
+    background-color: #fc5c65;
+    color: #fff;
+    border:none;
+    border-bottom: 3px solid #eb3b5a;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.eduction .box6 .details2 .btn:hover{
+    color: #fc5c65;
+    background-color: #fff;
+}
+
+.eduction .box6 .details2 .underline{
+    margin-left: initial;
+}
+
+/* -----------CSS for Video Section-------------- */
+
+.video{
+    width: 100%;
+}
+
+.video .video-section{
+    width: 100%;
+    background-color: #be2edd;
+}
+
+.video .video-container{
+    position: relative;
+    z-index: -10;
+}
+
+.video .video-section img{
+    width: 100%; 
+}
+
+.video .video-container .video-section .video-overlay{
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+}
+
+.video .video-container .video-section .video-overlay i{
+    font-size: 8rem;
+    color: #f1c40f;
+    padding: 4%;
+}
+
+.video .video-container .video-section .video-overlay h4{
+    font-size: 3rem;
+    padding: 2%;
+    color: #fff;
+}
+
+.video .video-container .video-section .video-overlay p{
+    font-size:1.5rem ;
+    color: #fff;
+    padding: 2%;
+}
+
+.newsletter{
+    width: 100%;
+    background-color: #be2edd;
+    height: 20vh;
+    display: flex;
+}
+
+.newsletter .news-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter .news-content .heading{
+    display: flex;
+    gap: 3%;
+    width: 55%;
+}
+
+.newsletter .news-content .heading i{
+    font-size: 4rem;
+    color: #fff;
+    padding: 0 3%;
+}
+
+.newsletter .news-content .heading .arrange{
+    width: 100%;
+    padding: 2%;
+}
+
+.newsletter .news-content .heading .arrange h4{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 2%;
+}
+
+.newsletter .news-content .heading .arrange p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.newsletter .news-content form{
+    width: 50%;
+    text-align: center;
+    padding: 4%;
+}
+
+.newsletter .news-content form input{
+    font-size: 1.5rem;
+    padding: 4%;
+    outline: none;
+    border: none;
+}
+
+.newsletter .news-content form .text{
+    width: 70%;
+    border-bottom: 4px solid #cb03f8;
+}
+
+.newsletter .news-content form .btn{
+    background-color: #81ecec;
+    border-bottom: 4px solid #00b894;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter .news-content form .btn:hover{
+    background-color: #fff;
+    color: #81ecec;
+    border: 4px solid #00b894;
+}
+
+
+
+/* -----CSS for Testimonial-------------- */
+
+.testimonial{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.testimonial .test-container{
+    flex: 1 1 40%;
+}
+
+.testimonial .test-container .profile{
+    padding: 5%;
+}
+
+.testimonial .test-container .profile p{
+    color: rgba(0, 0, 0, 0.5) ;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.testimonial .test-container .profile .quote:before{
+    content:"\201C" ;
+    font-size: 4rem;
+    color: orangered;
+}
+
+
+.testimonial .test-container .profile img{
+    width: 20%;
+    border-radius: 50%;
+    padding: 4% 0;
+}
+
+.testimonial .test-container .profile h4{
+    font-size: 1.5rem;
+    padding: 2% 0;
+}
+
+.testimonial .test-container .profile span{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial .test-container .profile .arrow{
+    padding: 4% 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.testimonial .test-container .profile .arrow i{
+    font-size: 1rem;
+    padding: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.testimonial .test-container .profile .question{
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.testimonial .test-container .profile .question .question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}   
+
+.testimonial .test-container .profile .question .question-title p {
+    margin-bottom: 0;
+    letter-spacing: 0.2rem;
+    color: #333;
+}
+
+
+.testimonial .test-container .profile .question .question-title .question-btn{
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.testimonial .test-container .profile .question .question-title .question-btn i{
+    color: red;
+    padding-right: 1rem;
+}
+
+.slider-container{
+    position: relative;
+}
+
+.slider{
+    display: none;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+/* -----CSS for Partners section--------- */
+
+.partner{
+    width: 100%;
+    background-color: #67809f;
+    padding: 2%;
+}
+
+.partner .partner-section{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+}
+
+.partner .partner-section h1{
+    color: #fff;
+}
+
+.partner .partner-section span{
+    color: #fff;
+}
+
+.partner .partner-section p{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-top: 5%;
+}
+
+.partner .partner-section .logo{
+    display: flex;
+    gap: 2%;
+    padding-top: 2%;
+}
+
+.partner .partner-section .logo .logo-container{
+    background-color: #fff;
+    width: 20%;
+    padding: 4%;
+    border-bottom: 4px solid red;
+}
+
+.partner .partner-section .logo .logo-container img{
+    width: 100%;
+}
+
+/* -------------------------CSS for Enroll Section----------- */
+
+.enroll{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.enroll .enroll-content{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%
+}
+
+.enroll .enroll-content .enroll-details h2{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 2% 0;
+}
+
+
+.enroll .enroll-content .enroll-details h2 span{
+    font-size: 3.5rem;
+    color: #000;
+}
+
+
+.enroll .enroll-content .enroll-details p{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 2% 0;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.enroll .enroll-content .enroll-details .btn{
+    font-size: 1.5rem;
+    padding: 2% 4%;
+    background-color: #ff7675;
+    color: #fff;
+    font-weight: bolder;
+    border:none;
+    border-bottom: 4px solid #d63031;
+    cursor: pointer;
+}
+
+.enroll .enroll-content .enroll-details .btn:hover{
+    color: #ff7675;
+    background-color: #fff;
+    border: 4px solid #d63031;
+}
+
+.enroll .enroll-content .img-container{
+    width: 100%;
+}
+
+.enroll .enroll-content .img-container img{
+    width: 100%;
+}
+
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.footer .footer-box{
+    width: 90%;
+    border-top: 6px solid rgb(196, 187, 187);
+    margin: auto;
+}
+
+.footer .footer-box .footer-content{
+    padding: 5% 0;
+    color: #fff;
+    display: flex;
+    gap: 2%;
+    border-bottom: 1px solid rgb(196, 187, 187);
+    flex-wrap: wrap;
+}
+
+.footer .footer-box .footer-content .footer-details{
+    padding:2% 0 ;
+    text-align: left;
+    flex: 1 1 20%;
+}
+
+.footer .footer-box .footer-content .footer-details h2{
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.footer .footer-box .footer-content .footer-details .logo{
+    width: 70%;
+    padding: 6% 0;
+}
+
+.footer .footer-box .footer-content .footer-details .logo img{
+    width: 100%;
+}
+
+.footer .footer-box .footer-content .footer-details p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgb(196, 187, 187);
+}
+
+.footer .footer-box .footer-content .footer-details .icons{
+    padding: 4% 0;
+    margin-top:2rem;
+}
+
+.footer .footer-box .footer-content .footer-details .icon-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(196, 187, 187);
+    padding: 2%;
+}
+
+.footer .footer-box .footer-content .footer-details .icon-details i{
+    font-size: 1.5rem;
+    color: rgb(196, 187, 187);
+
+}
+
+.footer .footer-box .footer-content .footer-details .second{
+    border: none;
+}
+
+
+.footer .footer-box .footer-content .footer-details .second i{
+    font-size: 1rem;
+}
+
+
+.footer .footer-box .footer-content .footer-details .letters{
+    padding: 5% 0;
+    border-bottom: 1px solid rgb(196, 187, 187);
+    
+}
+
+.footer .footer-box .footer-content .footer-details .letters span{
+    color: red;
+}
+
+.footer .footer-box .footer-content .footer-details .follow{
+    margin-top: 3rem;
+    color:#00a8ff;
+}
+
+.footer .footer-box .footer-content .footer-details form{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .footer-box .footer-content .footer-details form input,textarea{
+    width: 80%;
+    font-size: 1rem;
+    padding: 4% ;
+    text-align: left;
+    margin-bottom: 1rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(196, 187, 187);
+    color: rgba(196, 187, 187, 1);    
+}
+
+
+.footer .footer-box .footer-content .footer-details form input::placeholder,textarea::placeholder{
+    font-size: 1.5rem;
+}
+
+.footer .footer-box .footer-content .footer-details .btn{
+    font-size: 1.5rem;
+    padding: 4% 4%;
+    background-color: #ff7675;
+    color: #fff;
+    font-weight: bolder;
+    border:none;
+    border-bottom: 4px solid #d63031;
+    cursor: pointer;
+}
+
+.footer .footer-box .footer-content .footer-details .btn:hover{
+    color: #ff7675;
+    background-color: #fff;
+    border: 4px solid #d63031;
+}
+
+.footer-title{
+    color: white;
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-title p{
+    font-size: 1.5rem;
+    color:rgb(196, 187, 187);   
+}
+
+.footer-title p span{
+    color: #fff;
+}
+
+.footer-title .footer-icons{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+.footer-title i{
+    font-size: 1.5rem;
+    padding: 0 2%;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query  */
+
